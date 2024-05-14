@@ -1,18 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvkgr740u5kxk"]
+[gd_scene load_steps=4 format=3 uid="uid://bvkgr740u5kxk"]
 
+[ext_resource type="Script" path="res://Camera2D.gd" id="1_ignpr"]
 [ext_resource type="PackedScene" uid="uid://diiexobvbcpmc" path="res://cubo.tscn" id="1_lgarg"]
 [ext_resource type="PackedScene" uid="uid://cmwsegw31mhad" path="res://plataforma.tscn" id="2_0s7w0"]
 
 [node name="World" type="Node"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(248, 232)
+script = ExtResource("1_ignpr")
+
 [node name="Cubo" parent="." instance=ExtResource("1_lgarg")]
 position = Vector2(248, 376)
 
 [node name="Plataforma" parent="." instance=ExtResource("2_0s7w0")]
-position = Vector2(232, 688)
+position = Vector2(240, 592)
+
+[node name="Plataforma3" parent="." instance=ExtResource("2_0s7w0")]
+position = Vector2(112, 224)
 
 [node name="Plataforma2" parent="." instance=ExtResource("2_0s7w0")]
 position = Vector2(440, 456)
-
-[node name="Plataforma" parent="Plataforma2" instance=ExtResource("2_0s7w0")]
-position = Vector2(-328, -232)
