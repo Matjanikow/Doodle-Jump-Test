@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://diiexobvbcpmc"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_exl3t"]
+[ext_resource type="Texture2D" uid="uid://b7voxll7sdsfd" path="res://kenney_shape-characters/PNG/Default/blue_body_square.png" id="2_fi1po"]
+[ext_resource type="Texture2D" uid="uid://bgnol12pm8nkr" path="res://kenney_shape-characters/PNG/Default/face_a.png" id="3_ovcl6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qjnws"]
+size = Vector2(81, 80)
+
+[node name="Cubo" type="CharacterBody2D"]
+position = Vector2(280, 192)
+script = ExtResource("1_exl3t")
+
+[node name="BlueBodySquare" type="Sprite2D" parent="."]
+texture = ExtResource("2_fi1po")
+
+[node name="FaceA" type="Sprite2D" parent="."]
+texture = ExtResource("3_ovcl6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qjnws")
