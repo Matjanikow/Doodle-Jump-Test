@@ -1,8 +1,7 @@
 extends StaticBody2D
 
-@onready var notifier = $VisibleOnScreenNotifier2D
+@export var camera:Camera2D
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	#Este booleano si está False significa que se fue de la pantalla
-	var estoyEnPantalla = notifier.is_on_screen()
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	var inicioY = camera.global_position.y - (camera.get_viewport_rect().size.y /2)
+	position.y = inicioY

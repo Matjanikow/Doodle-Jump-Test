@@ -7,23 +7,44 @@
 [node name="World" type="Node"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(248, 232)
+position = Vector2(322, 452)
 script = ExtResource("1_ignpr")
 
 [node name="Cubo" parent="." instance=ExtResource("1_lgarg")]
-position = Vector2(248, 376)
+position = Vector2(126, 423)
 
-[node name="Plataforma" parent="." instance=ExtResource("2_0s7w0")]
-position = Vector2(240, 592)
+[node name="Plataforma" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(111, 683)
+camera = NodePath("../Camera2D")
 
-[node name="Plataforma3" parent="." instance=ExtResource("2_0s7w0")]
-position = Vector2(112, 224)
+[node name="Plataforma2" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(285, 517)
+camera = NodePath("../Camera2D")
 
-[node name="Plataforma2" parent="." instance=ExtResource("2_0s7w0")]
-position = Vector2(440, 456)
+[node name="Plataforma3" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(454, 683)
+camera = NodePath("../Camera2D")
 
-[node name="Plataforma4" parent="." instance=ExtResource("2_0s7w0")]
-position = Vector2(430, 56)
+[node name="Plataforma4" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(141, 242)
+camera = NodePath("../Camera2D")
 
-[node name="Plataforma5" parent="." instance=ExtResource("2_0s7w0")]
-position = Vector2(113, -88)
+[node name="Plataforma5" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(429, 310)
+camera = NodePath("../Camera2D")
+
+[node name="Plataforma6" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(386, 156)
+camera = NodePath("../Camera2D")
+
+[node name="Plataforma7" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(142, 45)
+camera = NodePath("../Camera2D")
+
+[node name="Plataforma8" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(424, 52)
+camera = NodePath("../Camera2D")
+
+[node name="Plataforma9" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("2_0s7w0")]
+position = Vector2(207, 795)
+camera = NodePath("../Camera2D")

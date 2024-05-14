@@ -7,4 +7,3 @@ func _process(delta):
 	var screen = get_viewport_rect()
 	if character.global_position.y < global_position.y:
 		global_position.y = cubo_y
-		

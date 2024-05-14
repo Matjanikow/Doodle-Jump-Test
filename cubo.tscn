@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://diiexobvbcpmc"]
+[gd_scene load_steps=8 format=3 uid="uid://diiexobvbcpmc"]
 
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_exl3t"]
 [ext_resource type="Texture2D" uid="uid://b7voxll7sdsfd" path="res://kenney_shape-characters/PNG/Default/blue_body_square.png" id="2_fi1po"]
 [ext_resource type="Texture2D" uid="uid://bgnol12pm8nkr" path="res://kenney_shape-characters/PNG/Default/face_a.png" id="3_ovcl6"]
+[ext_resource type="Texture2D" uid="uid://clkstgd583kr" path="res://kenney_shape-characters/PNG/Default/blue_hand_point.png" id="4_njti4"]
+[ext_resource type="Texture2D" uid="uid://dup8l3n3vclag" path="res://kenney_shape-characters/PNG/Default/blue_hand_peace.png" id="5_xwmwn"]
+[ext_resource type="Texture2D" uid="uid://dih71inb0cyw1" path="res://kenney_shape-characters/PNG/Default/tile_ramp_right.png" id="6_oq5x3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qjnws"]
 size = Vector2(81, 80)
@@ -19,3 +22,19 @@ texture = ExtResource("3_ovcl6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_qjnws")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="BlueHandPoint" type="Sprite2D" parent="."]
+position = Vector2(67, -7)
+texture = ExtResource("4_njti4")
+
+[node name="BlueHandPeace" type="Sprite2D" parent="."]
+position = Vector2(-64, -5)
+texture = ExtResource("5_xwmwn")
+
+[node name="TileRampRight" type="Sprite2D" parent="."]
+position = Vector2(0, -41)
+rotation = 2.30124
+scale = Vector2(0.44066, 0.477941)
+texture = ExtResource("6_oq5x3")
